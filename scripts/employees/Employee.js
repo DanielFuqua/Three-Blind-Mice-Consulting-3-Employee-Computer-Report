@@ -1,14 +1,23 @@
-export const Employee = (computerObj, departmentObj, employeeObj) => {
+export const Employee = (
+  computerObj,
+  departmentObj,
+  locationObj,
+  employeeObj
+) => {
   return `
-        <section class="employee">
-            <header>
-                <h2>${employeeObj.firstName} ${employeeObj.lastName}</h2>
-            </header>
-            <div>
-                <p>Age: ${employeeObj.age}</p>
-                <p>Department: ${departmentObj.name}</p>
-                <p>Assigned Computer: ${computerObj.model}(${computerObj.year})</p>
-            </div>
-        </section>
+  <div class="employee">
+    <header class="employee__name">
+        <h1>${employeeObj.firstName} ${employeeObj.lastName}</h1>
+    </header>
+    <section class="employee__computer">
+        Currently using a ${computerObj.year} ${computerObj.model}
+     </section>
+    <section class="employee__department">
+       Works in the ${departmentObj.name} department
+     </section>
+    <section class="employee__location">
+       Works at the ${locationObj.city} office
+    </section>
+</div>
     `;
 };
