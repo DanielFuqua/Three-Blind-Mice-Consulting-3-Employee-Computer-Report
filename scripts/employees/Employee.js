@@ -20,7 +20,7 @@ export const Employee = (
        Works at the ${locationObj.city} office
     </section>
     <section class="employee__customers">
-        Has worked for the following customers.
+        Has worked for the following customers:
         <ul>
           ${Customers.map((customer) => `<li>${customer.name}</li>`).join("")}
         </ul>
