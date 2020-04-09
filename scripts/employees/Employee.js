@@ -2,6 +2,7 @@ export const Employee = (
   computerObj,
   departmentObj,
   locationObj,
+  Customers,
   employeeObj
 ) => {
   return `
@@ -17,6 +18,12 @@ export const Employee = (
      </section>
     <section class="employee__location">
        Works at the ${locationObj.city} office
+    </section>
+    <section class="employee__customers">
+        Has worked for the following customers.
+        <ul>
+          ${Customers.map((customer) => `<li>${customer.name}</li>`).join("")}
+        </ul>
     </section>
 </div>
     `;
