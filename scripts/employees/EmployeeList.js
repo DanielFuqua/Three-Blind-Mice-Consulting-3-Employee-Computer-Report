@@ -3,7 +3,7 @@ import { useComputers } from "../ComputerProvider.js";
 import { Employee } from "./Employee.js";
 import { useDepartments } from "../DepartmentProvider.js";
 import { useLocations } from "../LocationsProvider.js";
-import { useCustomers } from "../CustomerProvider.js";
+import { useCustomers } from "../customers/CustomerProvider.js";
 import { useEmployeeCustomers } from "../EmployeeCustomerProvider.js";
 
 const contentTarget = document.querySelector(".employees");
